@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms & input</title>
+</head>
+<body>
+  <form action="process.js">
+    <!-- Name -->
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" name="name" id="name" value ="Mohanraj">
+    </div>
+    <!-- Email-->
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" placeholder="Enter your mail">
+    </div>
+    <!-- Text area -->
+    <div>
+      <label for="message">Feedback</label><br>
+      <textarea name="message" id="message" cols="20" rows="10" value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sit ducimus modi molestias qui similique culpa perferendis a nesciunt nemo?" placeholder="hii, there"></textarea>
+    </div>
+    <!-- selecter -->
+    <div>
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+    </div>
+    <div>
+      <label for="likes">Do you want to like?</label>
+      <select name="likes" id="likes">
+        <option value="pet3">Dog</option>
+        <option value="pet1">parrot</option>
+        <option value="pet2" selected>dolphin</option>
+      </select>
+    </div>
+    <!-- Number -->
+    <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" placeholder="age should be 18+">
+      <select name="age" id="age">
+        <option value="18">18+</option>
+        <option value="12">18-</option>
+      </select>
+    </div>
+    <!-- Date -->
+    <div>
+      <label for="birthdate">Birthdate</label>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <!-- Radio -->
+    <div>
+      <label for="membership">Membership</label>
+      <input type="radio" name="membership" value="standard" id="membership" checked>Standard
+      <input type="radio" name="membership" value="super" id="membership">Super
+      <input type="radio" name="membership" value="super" id="membership">Simple
+    </div>
+    <hr>
+    <!-- checkbox -->
+    <div>
+      <strong>Bugs lives in selecting checkbox. if you select the boxes multiple time, selected item is living there itself, don't hide itself </strong>
+      <br><label for="likes">I likes too..</label>
+      <input type="checkbox" name="likes" id="likes" value="bike">Bike
+      <input type="checkbox" name="likes" id="likes" value="car">car
+      <input type="checkbox" name="likes" id="likes" value="lorry" checked>lorry
+    </div><hr>
+    <!-- submission state -->
+    <input type="submit" value="submit">
+    <br><hr>
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
+  
